@@ -1,0 +1,5 @@
+
+All files within this folder are in ownership of Patrick Jahnig (Aerodlyn).
+
+You are welcome to look at the source code and copy/modify the layout of the
+site. If you do so, please email me so I can see your changes. :)
