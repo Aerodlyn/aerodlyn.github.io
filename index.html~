@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Aerodlyn | Patrick Jahnig</title>
+        
+        <style>
+            :root
+            {
+                --block-color: rgb(70, 70, 70);
+                --page-color: rgb(50, 50, 50);
+                --etc-color: rgb(245, 145, 45);
+                --text-color: aliceblue;
+            }
+            
+            a
+            {
+                color: var(--etc-color);
+                text-decoration: none;
+            }
+            
+            body
+            {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                background-color: var(--page-color);
+                color: var(--etc-color);
+                font-family: sans-serif;
+                margin: auto;
+                max-width: 50%;
+            }
+            
+            div
+            {
+                background-color: var(--block-color);
+                padding-left: 15px;
+                padding-right: 15px;
+                border: solid;
+                border-color: var(--etc-color);
+                border-radius: 15px;
+            }
+            
+            h1, h2
+            {
+                color: var(--etc-color);
+            }
+            
+            img
+            {
+                max-width: 75%;
+                display: block;
+                margin: auto;
+            }
+            
+            p
+            {
+                text-align: justify;
+                color: var(--text-color);
+            }
+
+            #footer
+            {
+                border: none;
+                background-color: var(--page-color);
+            }
+
+            .footer-link
+            {
+                color: rgb(120, 120, 120);
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div>
+            <h2>About Me</h2>
+            
+            <p>
+                Hullo! My name is Patrick Jahnig and I am a sophomore at Virginia Polytechnic Institute and State University
+                (go Hokies!) currently majoring in Computer Science with a focus on media products. Since I spend a
+                good chunk of my free time playing games I decided to try and make my own. So far I have enjoyed it, and
+                so I decided to pursue software development as a career path.
+            </p>
+            <p>
+
+            </p>
+            <p>
+                Visit my <a href="https://github.com/Aerodlyn" target="_blank"><b>GitHub page</b></a>! See my resume below
+                if you would like to contact me.
+            </p>
+        </div>
+        
+        <br>
+        
+        <div>
+            <h2>Current Projects</h2>
+            
+            <ul>
+                <li>
+                    <p>
+                        <a href='editor.html'><b>AeroHelper</b></a> is a helper program that I created
+                        to assist me in development of <a href='Orionis.html'><b>Orionis</b></a>. The program loads a
+                        sprite and allows the user to create named data sets (currently can only handle integers). The user
+                        can select a data set and then click the sprite, and the location of the click will be added to
+                        the data set. Data pairs can be manually added, removed, moved, or edited after the fact. The
+                        data sets can be exported to a text file, which is formatted in such a way as to be copied into a JSON file.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <a href='orionis.html'><b>Orionis</b></a> is a 2D space-themed real time strategy game
+                        where you - the player - faces off against a computer controlled opponent. You are in direct control
+                        of a flagship, a unique and powerful asset in your fleet. From this flagship you request reinforcements
+                        and give your fleet orders and can watch from afar as they carry them out, or jump right into the fray
+                        directly. Beware however, if your flagship is destroyed then the battle is almost lost. You might get a
+                        second chance, if the rest of your fleet can hold out long enough.
+                    </p>
+                </li>
+            </ul>
+
+            <h2>Planned Projects</h2>
+
+            <ul>
+                <li>
+                    <p>
+                        <b>AeroMusic</b> is a music player that I want to work on to help get a good grasp on a
+                        language other than Java. The reason why I want to work on a music player is mainly because I have
+                        not found a music player that I am wholly satisfied with so why not make my own? The current language
+                        I am thinking of using is C++, though that is subject to change.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>Lords of the Lost</b> is a game that I want to work on once I finish Orionis. From
+                        the basic planning that I have done, Lords of the Lost is going to be a RPG set in a dark medieval fantasy.
+                        I haven't decided if I want the game to be 2D or 3D (though it will probably be 2D). If the game is
+                        3D then I envision an isometric visual style. The game will be story-driven and will allow the player
+                        to choose from a variety of "beginnings" which will change up the story to some degree. The current language
+                        that I am thinking of using is Lua (<a href="http://love2d.org/" target="_blank"><b>LÖVE</b></a>), though
+                        of course that is subject to change.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        
+        <br>
+        
+        <div>
+            <h2>Resume (as of Jan. 2017)</h2>
+            <a href='Resume.pdf' download><img src='Resume.png' alt='Resume'></a>
+            <p style='text-align: center'>Click the image to download or right-click to open in new tab.</p>
+        </div>
+
+        <br>
+
+        <div id="footer">
+            <table style="width: 100%">
+                <tr>
+                    <th style="text-align: left"><a class="footer-link" href="https://github.com/Aerodlyn" target="_blank">Go to GitHub</a></th>
+                    <th style="text-align: right"><a class="footer-link" href="https://pages.github.com/" target="_blank">Hosted by GitHub Pages</a></th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
