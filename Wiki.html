@@ -121,6 +121,10 @@ Error message and password prompt
 
 <li>$:/config/AnimationDuration</li>
 
+<li>$:/config/DefaultSidebarTab</li>
+
+<li>$:/config/Navigation/UpdateAddressBar</li>
+
 <li>$:/config/NewJournal/Title</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/advanced-search</li>
@@ -140,6 +144,10 @@ Error message and password prompt
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki</li>
+
+<li>$:/config/Tiddlers/TitleLinks</li>
+
+<li>$:/config/Toolbar/ButtonClass</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold-bar</li>
 
@@ -167,9 +175,15 @@ Error message and password prompt
 
 <li>$:/state/tab--2112689675</li>
 
+<li>$:/state/tab--86143343</li>
+
+<li>$:/state/tab--959111941</li>
+
 <li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab/sidebar--1835078512</li>
+
+<li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
 <li>$:/status/UserName</li>
 
@@ -223,8 +237,14 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20170108070009342" modified="20170108070009601" title="$:/config/AnimationDuration">
-<pre>200</pre>
+<div created="20170108070009342" modified="20170216154959851" title="$:/config/AnimationDuration">
+<pre>75</pre>
+</div>
+<div created="20170216155104087" modified="20170216155104087" title="$:/config/DefaultSidebarTab">
+<pre>$:/core/ui/SideBar/Recent</pre>
+</div>
+<div created="20170216155124974" modified="20170216155130247" title="$:/config/Navigation/UpdateAddressBar">
+<pre>permalink</pre>
 </div>
 <div created="20170108004755428" modified="20170108004804818" title="$:/config/NewJournal/Title">
 <pre>MMM DDth YYYY</pre>
@@ -255,6 +275,12 @@ Error message and password prompt
 </div>
 <div created="20170108012556756" modified="20170108012556756" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki">
 <pre>hide</pre>
+</div>
+<div created="20170216155137302" modified="20170216155141230" title="$:/config/Tiddlers/TitleLinks">
+<pre>no</pre>
+</div>
+<div created="20170216155143949" modified="20170216155203756" title="$:/config/Toolbar/ButtonClass">
+<pre>tc-btn-invisible</pre>
 </div>
 <div created="20170108012737564" modified="20170108012738822" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold-bar">
 <pre>hide</pre>
@@ -7927,14 +7953,14 @@ Error message and password prompt
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div created="20170108065904778" modified="20170108065958337" title="$:/palette">
+<div created="20170108065904778" modified="20170216155048267" title="$:/palette">
 <pre>$:/palettes/Vanilla</pre>
 </div>
 <div created="20170108004725910" modified="20170108004732430" title="$:/SiteSubtitle">
 <pre>a codex of the Orionis universe</pre>
 </div>
-<div created="20170108004717439" modified="20170108070355218" title="$:/SiteTitle">
-<pre>&lt;a class=&quot;link&quot; href=&quot;Orionis.html&quot;&gt;Orionis&lt;/a&gt; Wiki</pre>
+<div created="20170108004717439" modified="20170217182328965" title="$:/SiteTitle">
+<pre>&lt;a class=&quot;link&quot; href=&quot;orionis.html&quot; target=&quot;_blank&quot;&gt;Orionis Wiki&lt;/a&gt;</pre>
 </div>
 <div created="20170108070301042" modified="20170108070301042" title="$:/state/showeditpreview">
 <pre>yes</pre>
@@ -7942,22 +7968,31 @@ Error message and password prompt
 <div created="20170108012724452" modified="20170108012749265" title="$:/state/tab--1774348895">
 <pre>$:/core/ui/TiddlerInfo/Tools</pre>
 </div>
-<div created="20170108010031350" modified="20170108065900277" title="$:/state/tab--1963855381">
+<div created="20170108010031350" modified="20170217182250075" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Palette</pre>
 </div>
-<div created="20170108010026207" modified="20170108010028492" title="$:/state/tab--2112689675">
+<div created="20170108010026207" modified="20170216155009385" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20170108010029382" modified="20170108070002645" title="$:/state/tab-1749438307">
+<div created="20170216155230225" modified="20170216155231326" title="$:/state/tab--86143343">
+<pre>$:/core/ui/ControlPanel/Plugins/Installed/Languages</pre>
+</div>
+<div created="20170216155006204" modified="20170216155007436" title="$:/state/tab--959111941">
+<pre>$:/core/ui/ControlPanel/EditorTypes</pre>
+</div>
+<div created="20170108010029382" modified="20170217182254467" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20170108004908672" modified="20170213060529794" title="$:/state/tab/sidebar--1835078512">
+<div created="20170108004908672" modified="20170217182224883" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div created="20170108004737478" creator="A" modified="20170108004738003" modifier="A" title="$:/status/UserName">
+<div created="20170217182246587" modified="20170217182246587" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
+</div>
+<div created="20170108004737478" creator="A" modified="20170216154947545" modifier="A" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div list="Stylesheet Floviech [[Moska Imper]] Kaevirn [[Welcome to the Orionis Wiki!]]" title="$:/StoryList">
+<div list="[[Welcome to the Orionis Wiki!]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -7977,7 +8012,7 @@ Error message and password prompt
 <div created="20170108005130197" modified="20170113053557054" title="$:/temp/search">
 <pre></pre>
 </div>
-<div created="20170108065854053" modified="20170108065856779" title="$:/theme">
+<div created="20170108065854053" modified="20170217182242715" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.13">
@@ -8155,7 +8190,7 @@ The Floviech are a mammalian species from the arid world of [[Moska Imper]]. Flo
 Very few Floviech live outside of [[Imperium|High Flovok Imperium]] space. The reason for that is largely because a good portion (roughly 59%) of the Floviech population is enslaved, and that the Imperium constantly informs its populace of the horrors that the other galactic civilizations have in store for them if they flee from Imperium space so few have the means or desire to leave. The few Floviech that do live outside Imperium space are mostly located on Mondraic worlds, such as [[Gharstag]]. The Floviech account for around 15% (roughly 14.7 trillion) of the galaxy's population (roughly 98 trillion), making them the third most populous species. The Floviech are known for their aggressive nature and quickness to anger, which were the cause of the &quot;UI-972-5 Incident.&quot; UI-972-5 (now known as Ras Ind) is a terra world with an overall arid climate that sits near the old Dominion-Imperium border. Both the Imperium and Dominion wanted to colonize UI-972-5 to set up mining settlements. The Dominion suggested that the planet be split in half, with the Dominion taking the northern hemisphere and the Imperium taking the southern. Upon hearing the offer, the Imperium fleet that was orbiting the planet began to shoot at the Dominion fleet. The Dominion, not wanting to go to war with the Imperium, ordered their fleet to leave the planet. UI-972-5 is only one of a list of incidents that the Imperium has been the cause of, causing many to look down on Floviech as brutes and bullies.
 &lt;/p&gt;</pre>
 </div>
-<div created="20170108004828588" modified="20170213060332272" tags="[[Planets and Moons]] [[New Muraezi Diarchy]]" title="Kaevirn">
+<div created="20170108004828588" modified="20170216161928084" tags="[[Planets and Moons]] [[New Muraezi Diarchy]]" title="Kaevirn">
 <pre>&lt;blockquote&gt;
 &lt;p class=&quot;q-p&quot;&gt;
 The Father looked to the sky as light touched his face, and a tear came to his eye. &quot;O Mother, I never imagined it would be so beautiful. And now I must do my part for our children, so that they can truly appreciate your light.&quot; And as the Father cried he split his blood on the dirt and fell. As his eyes closed he saw a blade of grass poke out from the dirt, and smiled.
@@ -8184,14 +8219,14 @@ Kaevirn as seen in-game
 &lt;/div&gt;
 
 &lt;p&gt;
-The majority of animal life on the planet is reptilian, and is fairly small in stature. This is theorized to be due to the thick jungles that cover most of Kaevirn's landmass. The Muraezi are one of the larger species to live on Kaevirn. The Muraezi began their civilization just like any other sapient species, as small tribes that lived in caves. These caves were situated in the valleys between steep mountains. These valleys eventually came to the prime locations of Muraezi towns and cities. However, one location differed from early Muraezi settlements in that it was located on a small collection of large and relatively flat islands. The islands are known as Ygghari Aesnagg and is the site of the oldest city to be continually populated on Kaevirn, Kygr var Mur. That city is supposedly the site where Kaevirn - &quot;the Father&quot; - sacrificed himself along side Raeirmira - &quot;the Mother&quot; - to provide the Muraezi with light and sapience. Kygr var Mur is known as Muraezi Kygr today and is Kaevirn's capital and most populated city.
+The majority of animal life on the planet is reptilian, and is fairly small in stature. This is theorized to be due to the thick jungles that cover most of Kaevirn's landmass. The Muraezi are one of the larger species to live on Kaevirn. The Muraezi began their civilization just like any other sapient species, as small tribes that lived in caves. These caves were situated in the valleys between steep mountains. These valleys eventually came to be the prime locations of Muraezi towns and cities. However, one location differed from early Muraezi settlements in that it was located on a small collection of large and relatively flat islands. The islands are known as Ygghari Aesnagg and is the site of the oldest city to be continually populated on Kaevirn, Kygr var Mur. That city is supposedly the site where Kaevirn - &quot;the Father&quot; - sacrificed himself along side Raeirmira - &quot;the Mother&quot; - to provide the Muraezi with light and sapience. Kygr var Mur is known as Muraezi Kygr today and is Kaevirn's capital and most populated city.
 &lt;/p&gt;
 
 &lt;p class=&quot;last-p&quot;&gt;
 The planet hosts a population of roughly 67 billion, with 97% of that population being Muraezi. However, Kaevirn is only the sixth most populated Diarchy world and twenty-eighth most populated planet in the galaxy. The most populated city is Muraezi Kygr, the &quot;City of Mur,&quot; which has a total population of just over 410 million. Muraezi Kygr is a galactic-wide tourist destination and sees a daily tourist count in the hundreds of thousands. The city was rebuilt by the [[New Muraezi Diarchy]] after the [[Confederacy of Independent Muraezi Systems|Muraezi Civil War]] bombarded it from orbit after the events of [[Vvundr's Fall|Muraezi Civil War]], which led to the [[Muraezi Civil War]]. The Diarchy built it along strict guidelines to give off a sense of power and elegance to any who visit. Thus the city's skyline is categorized by spires - some of which reach a height of 2 kilometers - that are painted in a clean white and black, and usually have a colored stripe that represents what the building was designed for. Muraezi Kygr has a fully automated traffic system which involves a local area server that takes control of each vehicle - specifically a vehicle known as a Maegr - that enters the city.
 &lt;/p&gt;</pre>
 </div>
-<div created="20170213055949512" modified="20170213060435099" tags="[[Planets and Moons]] [[High Flovok Imperium]]" title="Moska Imper">
+<div created="20170213055949512" modified="20170216161749538" tags="[[Planets and Moons]] [[High Flovok Imperium]]" title="Moska Imper">
 <pre>&lt;div class=&quot;left-image&quot;&gt;
 &lt;img src=&quot;Moska_Imper.jpg&quot;&gt;
 &lt;p style=&quot;text-indent: 0px&quot;&gt;
@@ -8200,16 +8235,22 @@ Moska Imper from orbit, with Maska Imper to the right
 &lt;/div&gt;
 
 &lt;p&gt;
+Moska Imper is an arid world, covered by canyons and crags, and is part of a binary planet system with [[Maska Imper]]. Moska Imper is the fourth planet that orbits the star Tande Amper. The planet is almost entirely covered by land (89%) with a single sea. The sea is feed by small rivers that sit at the bottom of the numerous canyons of the planet. The majority of land is undeveloped desert, but the areas along the sea and any other water source are usually heavily developed and densely populated. All plant life, and animal life by extension, live among any source of water. The farther that you stray from the sea, the less life you'll find. The areas where no life can be found are known as The Wastes. Moska Imper is the homeworld of the [[Floviech]], and capital of the [[High Flovok Imperium]].
 &lt;/p&gt;
 
 &lt;div class=&quot;right-image&quot;&gt;
-&lt;img src=&quot;https://raw.githubusercontent.com/Aerodlyn/Orionis/devel/core/assets/Maps/Planets/Moska_Imper.png&quot;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Aerodlyn/Orionis/master/core/assets/Maps/Planets/Moska_Imper.png&quot;&gt;
 &lt;p style=&quot;text-indent: 0px&quot;&gt;
 Moska Imper as seen in-game
 &lt;/p&gt;
 &lt;/div&gt;
 
+&lt;p&gt;
+Most animal life on Moska Imper is fairly large, but are usually slow moving due to the limited amounts of water and food on the planet. The Floviech evolved to scale the sides of canyons and eat the smaller animals that would burrow into the cliff face. Other animal life evolved to be aggressive and deadly, and plant life on the planet is mostly toxic. The Floviech built their civilization along the only sea of Moska Imper, which they call Fa Kal, or &quot;the Eye.&quot; Floviech society grew to be centered on domination, and the power of an individual was measured in the number of slaves that individual owned. Slaves were taken from conquered tribes, treated and bred like animals, as the Floviech view slaves as less than sapient being. The most powerful of Floviech became to viewed as a sort of god, as he could not be bested by anyone but his own son. What was originally superstition became tradition. The High Imperator is seen as a god who can only be usurped by his son, who does so by besting his father in combat. And by doing so, the son becomes the God and Imperator of the Floviech people. 
+&lt;/p&gt;
+
 &lt;p class=&quot;last-p&quot;&gt;
+The planet has a population of roughly 3.5 billion, with the vast majority being Floviech. Moska Imper is the twenty-first most populated Imperium world and forty-ninth most populated planet in the galaxy. Any aliens that live on Moska Imper do so not by choice, but because they are slaves of the Floviech elite. Almost 65% of the Floviech population on Moska Imper is also enslaved.
 &lt;/p&gt;</pre>
 </div>
 <div created="20170113052822761" modified="20170209025850723" tags="Species" title="Muraezi">
