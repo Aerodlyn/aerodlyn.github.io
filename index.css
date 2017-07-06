@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    min-width: 500px;
+}
+
+div#header {
+    width: 100%;
+    height: 25em;
+
+    background-color: black;
+    background-image: url("Images/Background.png");
+    background-position: center;
+    background-size: cover;
+}
+
+div#header img#profile_picture {
+    max-width: 7.5em;
+    position: absolute;
+    left: 5em;
+    top: 5em;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+}
+
+div#header h1#profile_text {
+    position: absolute;
+    left: 2.5em;
+    top: 6em;
+    padding: 15px;
+    border-radius: 15px;
+
+    background-color: black;
+    color: white;
+}
+
+div#header span#project_quicklist {
+    padding: 15px;
+    border-radius: 15px;
+
+    background-color: black;
+    color: white;
+    
+    position: absolute;
+    right: 1em;
+    top: 23.25em;
+
+    word-spacing: 10px;
+}
+
+div#header span#project_quicklist a {
+    color: white;
+}
+
+div#body {
+    padding-left: 5%;
+    max-width: 50%;
+}
+
+div#body p {
+    font-size: 24px;
+}
+
+div#body a {
+    color: slategray;
+    text-decoration: none;
+}
+
+div#body p#resume_text {
+    font-size: 14px;
+    font-style: italic;
+
+    text-align: center;
+}
+
+div#body li {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div#body hr {
+    border: none;
+    height: 1px;
+    
+    color: white;
+    background:black;
+    background: -webkit-radial-gradient(center, 50% 1em, black, white);
+
+}
+
+div#body img {
+    max-width: 60%;
+    margin: auto;
+    display: block;
+}
+
+div#body div#bottom_quicklist {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+div#bottom_quicklist span#github {
+    float: left;
+}
+
+div#bottom_quicklist span#hosted {
+    float: right;
+}
