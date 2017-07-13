@@ -97,8 +97,7 @@ div#body img {
     display: block;
 }
 
-div#body div#bottom_quicklist {
-    text-align: center;
+div#body div#bottom_quicklist span {
     padding-bottom: 20px;
 }
 
