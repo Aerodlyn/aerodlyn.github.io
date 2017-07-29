@@ -59,7 +59,7 @@ div#header span#project_quicklist a {
 
 div#body {
     padding-left: 5%;
-    max-width: 50%;
+    max-width: 50em;
 }
 
 div#body p {
