@@ -77,11 +77,11 @@ div#page img {
 }
 
 div#page svg#gpa-graph {
-    width: 85%;
+    width: 50%;
 
     display: block;
     margin: auto;
-    padding: 50px;
+    padding: 25px;
 
     /*border: 1px solid black;*/
 }
