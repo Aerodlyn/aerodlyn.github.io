@@ -7,19 +7,22 @@ var graph = d3.select("#gpa-graph");
 var height = graph.style("height").replace("px", "");
 var width = graph.style("width").replace("px", "");
 
-var x = d3.scalePoint().domain(overallGPA.map(function(d) { return d.semester; })).range([0, width]);
-var y = d3.scaleLinear().domain([3, 4]).range([height, 0]);
+var x = d3.scaleBand().domain(overallGPA.map(function(d) { return d.semester; })).range([0, width]).padding(0.1);
+var y = d3.scaleLinear().domain([0, 4]).range([height, 0]);
 
 var xAxis = d3.axisBottom().scale(x);
 var yAxis = d3.axisLeft().scale(y);
-
-var line = d3.line()
-    .x(function(d) { return x(d.semester); })
-    .y(function(d) { return y(d.gpa); });
 
 graph.append("svg:g")
     .attr("transform", "translate(0, " + height + ")")
     .call(xAxis);
 graph.append("svg:g").call(yAxis);
-graph.append("svg:path").attr("d", line(overallGPA));
-graph.append("svg:path").attr("d", line(inMajorGPA));
+graph.selectAll(".bar")
+    .data(overallGPA)
+    .enter()
+    .append("rect")
+    .attr("class", "overall-bar")
+    .attr("x", function(d) { return x(d.semester); })
+    .attr("width", x.bandwidth())
+    .attr("y", function(d) { return y(d.gpa); })
+    .attr("height", function(d) { return height - y(d.gpa); });
