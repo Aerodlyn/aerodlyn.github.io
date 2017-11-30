@@ -107,3 +107,11 @@ path {
 
     fill: none;
 }
+
+.in-major-bar {
+    fill: red;
+}
+
+.overall-bar {
+    fill: green;
+}
