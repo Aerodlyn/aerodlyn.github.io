@@ -1,97 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
-    <head>
-        <title>Aerodlyn | Patrick Jahnig</title>
+<head>
+    <title>Patrick Jahnig | Aerodlyn</title>
 
-        <link href="index.css" type="text/css" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
 
-    <body>
-        <div id="header">
-            <img id="profile_picture" src="Images/Profile_Picture.jpg">
-            <h1 id="profile_text">Aerodlyn | Patrick Jahnig</h1>
+<body>
+    <div id="header">
+        <hr class="outer">
+        <hr class="inner">
 
-            <span id="project_quicklist">
-                <a href="#aerohelper">AeroHelper</a>
-                |
-                <a href="#orionis">Orionis</a>
-            </span>
+        <div>
+            <h2>PATRICK JAHNIG | AERODLYN</h2>
         </div>
+
+        <hr class="inner">
+        <hr class="outer">
+    </div>
+
+    <div id="page">
+        <a href="Resources/Resume.pdf" target="_blank"><img src="Images/Resume.png" alt="Resume"></a>
+
+        <h1>WELCOME</h1>
+        <hr>
+        <p>
+            Hullo and welcome! This is a simple site where I have some information 
+                about myself and my projects.
+        </p>
+
+        <p>
+            To the right is the current copy of my resume, which was last updated 
+                July 2017. To view the document in a larger size, or to download it, 
+                please click the image.
+        </p>
+
+        <h1>ABOUT ME</h1>
+        <hr>
+        <p>
+            I am currently a junior at Virginia Tech, majoring in Computer Science. 
+                I am hoping to pursue a career in software development. Before my graduation,
+                I would like to intern with a company to gain some professional experience
+                in software development as all of my experience has been related to either
+                personal projects or coursework.                   
+        </p>
+
+        <p>
+            Currently, in my free time I'm usually working on a couple of personal 
+                projects that I have detailed below, as well as learning new programming languages
+                and concepts. At the moment, I have been trying my hand at COBOL and Assembly (NASM). 
+        </p>
+
+        <h1>PROJECTS</h1>
+        <hr>
+
+        <h1 id="aerohelper-header">A</h1>
+
+        <p>
+            Test text....
+        </p>
+
+        <br>
+        <br>
+        <br>
+
+        <h1 id="orionis-header">O</h1>
+
+        <p>
+            Test text....
+        </p>
         
-        <div id="body">
-            <p>
-                Welcome to my portfolio site! Here I have some information about my current and past projects, located here and on their own 
-                    individual pages.
-            </p>
+        <br>
+        <br>
+        <br>
 
-            <hr>
+        <h1>COURSEWORK</h1>
+        <hr>
 
-            <p>
-                Here is my current resume, as of July 2017:
-            </p>      
+        <p>
+            Below I will give a brief description (provided by Tech's course catalog) of each course
+                that I have taken as well as when. Also below is a simple graph of my in-major and overall
+                GPA over the course of my time at Tech.
+        </p>
 
-            <a href="Resources/Resume.pdf" download><img src="Images/Resume.png"></a>  
+        <svg id="gpa-graph"></svg>
 
-            <p id="resume_text">
-                Click the image to download or right-click to view.
-            </p>
+        <h1>FALL 2015</h1>
+        <hr>
 
-            <hr>
+        <p>
+            <b>General Chemistry & Lab</b> - Principles of the science, character of the elements and 
+                their more important compounds, solution of chemical problems, and important 
+                applications.
+        </p>
 
-            <p>
-                If you would like to view my coursework, please email me and let me know. I will then add you to the private repositories (currently 
-                    on GitLab) or I will email you each course as an archive.
-            </p>
+        <p>
+            <b>Foundations of Engineering</b> - A first-year sequence to introduce general 
+                engineering students to the profession, including data collection and analysis, 
+                engineering, problem-solving, mathematical modeling, design, contemporary software 
+                tools, professional practices and expectations (e.g. communication, teamwork, 
+                ethics), and the diversity of fields and majors within engineering.
+        </p>
 
-            <hr>
+        <p>
+            <b>Intro. to Science Fiction</b> - This course introduces a variety of speculative works 
+                within the genres of science fiction and fantasy. Attention will be given to the 
+                development and principal characteristics of each genre. Emphasis is placed on the 
+                social, cultural, and historical contexts in which specific speculative texts have 
+                been produced.
+        </p>
 
-            <p>
-                Below is a list of my projects:
-            </p>
+        <p>
+            <b>First Year Galileo Seminar</b> - Success strategies that are designed for first-year 
+                male engineering students who are residents of the Galileo learning community are 
+                presented. Students are provided information on study skills; resources and academic 
+                support for Virginia Tech students; gender issues in engineering; service learning; 
+                leadership; technology; and the College of Engineering's department/majors.
+        </p>
 
-            <ul>
-                <li> 
-                    <a id="aerohelper" href="https://aerodlyn.github.io/AeroHelper/"><strong>AeroHelper</strong></a> is a simple helper program that I created to assist my development 
-                        of Orionis. The program is used to create polygonal shapes that are based on the appearance of a sprite. Orionis originally 
-                        needed an array of 2D points for each ship to calculate whether or not a projectile was colliding with the ship. Before the 
-                        creation of AeroHelper, these points had to manually placed by calculating their locations using an image manipulator. That 
-                        process was incredibly tedious even for small ships. 
-                        
-                        <br><br>
-                        
-                        Note: While the current version of Orionis doesn't make use of AeroHelper's capabilities, AeroHelper remains useful for future 
-                        projects that would need manual definitions polygonal collision bounds.
-                </li>
+        <p>
+            <b>Vector Geometry</b> - Course desription not available, as course is no longer offered.
+                I had to take this to recieve credit for my transfer credit of multivariable calculus.
+        </p>
 
-                <li>
-                    <a id="orionis" href="https://aerodlyn.github.io/Orionis/"><strong>Orionis</strong></a> is a 2D turn-based fleet strategy game where the player pits their fleet against 
-                        another. Over the course of the battle the player will need to decide on each action their ships will make. Do you want your
-                        ship to go for the obvious action and attack an enemy ship? Or you do want to be more strategic and take your time, using your
-                        ships to defend each other and call in reinforcements. Be aware however, the ultimate win condition is to destroy the enemy
-                        flagship, the centerpiece of a fleet. But, the more and stronger ships a fleet has, the harder it will be to destroy the
-                        flagship.
+        <h1>SPRING 2016</h1>
+        <hr>
 
-                    <ul>
-                        <li>
-                            <a href="https://aerodlyn.github.io/Orionis#orionis_launcher"><strong>Orionis | Launcher</strong></a> is a simple wrapper application that makes it easy for the user to
-                                launch the game as well as the settings application, all from one place.
-                        </li>
+        <p>
+            <b>Foundations of Engineering</b> - A first-year sequence to introduce general engineering 
+                students to the profession, including data collection and analysis, engineering 
+                problem-solving, mathematical modeling design, contemporary software tools, professional 
+                practices and expectations (e.g. communication, teamwork, ethics), and the diversity of 
+                fields and majors within engineering.
+        </p>
 
-                        <li>
-                            <a href="https://aerodlyn.github.io/Orionis#orionis_options"><strong>Orionis | Options</strong></a> is a simple external application that can used to modify the settings 
-                                that Orionis uses without having to first open Orionis.
-                        </li>
-                    </ul>
-                </li>
-            </ul>   
+        <p>
+            <b>Insects & Human Society</b> - An appreciation of the past, present and future role of 
+                insects with human society. Includes how to identify common insects and other arthropods, 
+                the effects of insects on human history; diseases transmitted by insects and their worldwide 
+                impact; insects and their influence on our language, literature, and the arts; management of 
+                pests of plants, animals, and its effects on environmental pollution; and practical 
+                information of how to recognize and manage important insects and arthropods, such as 
+                termites in houses and fleas on animals.
+        </p>
 
-            <hr>
+        <p>
+            <b>Intro. to Detective Fiction</b> - This course introduces students to classic and modern texts 
+                of detective fiction from a variety of historical periods and cultural traditions.
+        </p>
 
-            <div id="bottom_quicklist">
-                <span id="github"><a href="https://github.com/Aerodlyn/" target="_blank">Go To GitHub</a></span>
-                <span id="hosted"><a href="https://pages.github.com/" target="_blank">Hosted by GitHub Pages</a></span>
-            </div>
-        </div>
-    </body>
-</html>
+        <p>
+            <b>Intro. to Software Design</b> - Fundamental concepts of programming from an object-oriented 
+                perspective. Basic software engineering principles and programming skills in a programming 
+                language that supports the object-oriented paradigm. Simple data types, control structures, 
+                array and string data structures, basic algorithms, testing and debugging. A basic model of 
+                the computer as an abstract machine. Modeling and problem-solving skills applicable to 
+                programming at this level.
+        </p>
+
+        <p>
+            <b>World Regions</b> - Human and physical patterns of major regions of the world. Concepts and 
+                perspectives of geography as a social science; linkages and interdependence of nations and 
+                regions.
+        </p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
