@@ -1,15 +1,16 @@
 var overallGPA = [{semester: "Fall 2015", gpa: 3.22}, {semester: "Spring 2016", gpa: 3.62}, 
-    {semester: "Fall 2016", gpa: 3.42}];
-var inMajorGPA = [{semester: "Fall 2015", gpa: 3.99}, {semester: "Spring 2016", gpa: 4.00}, 
-    {semester: "Fall 2016", gpa: 3.54}];
+    {semester: "Fall 2016", gpa: 3.42}, {semester: "Spring 2017", gpa: 3.50}];
+var inMajorGPA = [{semester: "Fall 2015", gpa: 0.00}, {semester: "Spring 2016", gpa: 4.00}, 
+    {semester: "Fall 2016", gpa: 3.54}, {semester: "Spring 2017", gpa: 3.54}];
 
 var data = [overallGPA, inMajorGPA];
+var dataNames = ["Overall GPA", "In-Major GPA"];
 
 var graph = d3.select("#gpa-graph");
 var height = graph.style("height").replace("px", "");
 var width = graph.style("width").replace("px", "");
 
-var x = d3.scaleBand().domain(overallGPA.map(function(d) { return d.semester; })).range([0, width]).padding(0.1);
+var x = d3.scaleBand().domain(overallGPA.map(function(d) { return d.semester; })).range([0, width]).padding(0.25);
 var y = d3.scaleLinear().domain([0, 4]).range([height, 0]);
 var z = d3.scaleOrdinal().range([getComputedStyle(document.body).getPropertyValue("--header-background-color"), 
     getComputedStyle(document.body).getPropertyValue("--header-text-color")]);
@@ -46,3 +47,25 @@ graph.append("g")
     .attr("width", x.bandwidth() / data.length)
     .attr("y", function(d) { return y(d.gpa); })
     .attr("height", function(d) { return height - y(d.gpa); });
+
+var legend = graph.append("g")
+    .selectAll("g")
+    .data(dataNames)
+    .enter()
+    .append("g")
+    .attr("class", "legend")
+    .attr("transform", function(d, i) {
+        return "translate(" + (width * 1.25) + ", " + (25 * i) + ")";
+    });
+
+legend.append("rect")
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("width", 20)
+    .attr("height", 20)
+    .style("fill", function(d, i) { return z(i); });
+
+legend.append("text")
+    .attr("x", -100)
+    .attr("y", 15)
+    .text(function(d) { console.log(d); return d; });
