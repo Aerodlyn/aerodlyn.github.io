@@ -81,9 +81,7 @@ div#page svg#gpa-graph {
 
     display: block;
     margin: auto;
-    padding: 25px;
-
-    /*border: 1px solid black;*/
+    padding: 25px 200px;
 }
 
 div#page h1#aerohelper-header, div#page h1#orionis-header {
