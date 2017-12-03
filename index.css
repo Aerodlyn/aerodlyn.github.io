@@ -84,10 +84,50 @@ div#page svg#gpa-graph {
     padding: 25px 200px;
 }
 
-div#page h1#aerohelper-header, div#page h1#orionis-header {
-    font-size: 200%;
+div#page div#left-header, div#page div#right-header {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 25px 10px;
+
+    font-size: 1.5em;
+    text-align: center;
+
+    border: 1px solid var(--header-text-color);
+    border-radius: 50%;
     
     color: var(--header-text-color);
+    background-color: var(--header-background-color);
+}
+
+div#page div#left-header p, div#page div#right-header p {
+    width: 2.5em;
+    height: 2.5em;
+
+    vertical-align: middle;
+
+    display: table-cell;
+}
+
+div#page div#left-header {
+    float: left;
+}
+
+div#page div#right-header {
+    float: right;
+}
+
+/*div#page h1#aerohelper-header, div#page h1#orionis-header {
+    font-size: 200%;
+    text-indent: -0.15em;
+    width: 0.5em;
+    height: 0.5em;
+
+    border: 1px solid var(--header-text-color);
+    border-radius: 75%;
+    padding: 0.5em;
+
+    color: var(--header-text-color);
+    background-color: var(--header-background-color);
 }
 
 div#page h1#aerohelper-header {
@@ -96,7 +136,7 @@ div#page h1#aerohelper-header {
 
 div#page h1#orionis-header {
     float: right;
-}
+}*/
 
 /* d3 */
 path {
