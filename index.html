@@ -21,7 +21,7 @@
     </div>
 
     <div id="page">
-        <a href="Resources/Resume.pdf" target="_blank"><img src="Images/Resume.png" alt="Resume"></a>
+        <a href="Resources/Resume.pdf" target="_blank"><img id="resume" src="Images/Resume.png" alt="Resume"></a>
 
         <h1>WELCOME</h1>
         <hr>
@@ -65,8 +65,20 @@
             Early in the development of Orionis, the ships within the game needed to have a polygonal
                 collision bounds so that I could check if a projectile was colliding with a ship. I decided
                 to use an array of floating point numbers to represent x and y coordinates. These coordinates
-                were positioned relative to the center of the ship's coordinate space.
+                were positioned relative to the center of the ship's coordinate space. I couldn't find a tool 
+                that I could reliabibly use to create this arrays. At first I used an image manipulation program 
+                to get the coordinates of where I wanted the vertex to be, and did some simple math to convert 
+                it in the format that it needed to be. Simply put, this was very tedious even for small ships. 
+                So, I decided to create a program that I could use to make the process much easier and quicker.
         </p>
+
+        <p>
+            And so I began to work on AeroHelper. The program is relatively simple, the basis being using an image
+            (sprite) as the basis of where you click, the locations of your clicks being the vertices of a polygonal
+            shape.
+        </p>
+
+        <img class="project-gif" src="https://github.com/Aerodlyn/AeroHelper/blob/master/docs/Images/AeroHelper.gif?raw=true">
 
         <a href="https://aerodlyn.github.io/Orionis">
             <div id="right-header">
@@ -75,8 +87,12 @@
         </a>
 
         <p>
-            Test text....
+            Test text.... Test text.... Test text.... Test text.... Test text.... Test text.... Test text.... Test text....
+                Test text.... Test text.... Test text.... Test text.... Test text.... Test text.... Test text....
+                Test text.... Test text.... Test text.... Test text.... Test text.... Test text.... Test text....
         </p>
+
+        <img class="project-gif" src="https://github.com/Aerodlyn/Orionis/blob/master/docs/Images/Intro_Warp.gif?raw=true">
         
         <br>
         <br>
@@ -92,6 +108,11 @@
         </p>
 
         <svg id="gpa-graph"></svg>
+
+        <p>
+            I have some of my coursework on GitLab, but the repositories are private. If you would like to 
+                view them, please email me so I can give you access.
+        </p>
 
         <h1>FALL 2015</h1>
         <hr>

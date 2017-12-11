@@ -74,9 +74,16 @@ div#page hr {
     padding: 0em;
 }
 
-div#page img {
+div#page img#resume {
     width: 60%;
     float: right;
+}
+
+div#page img.project-gif {
+    width: 75%;
+    margin: auto;
+    
+    display: block;
 }
 
 div#page svg#gpa-graph {
