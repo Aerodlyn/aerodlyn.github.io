@@ -92,6 +92,8 @@ div#page svg#gpa-graph {
     display: block;
     margin: auto;
     padding: 25px 200px;
+
+    overflow: visible;
 }
 
 div#page div#left-header, div#page div#right-header {
