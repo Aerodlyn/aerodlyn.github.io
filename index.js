@@ -1,10 +1,9 @@
-// Calculate per-semester GPA's for more accuracy
 var overallGPA = [{semester: "Fall 2015", gpa: 3.2231}, {semester: "Spring 2016", gpa: 3.6214}, 
     {semester: "Fall 2016", gpa: 3.4250}, {semester: "Spring 2017", gpa: 3.5000}, {semester: "Fall 2017", gpa: 3.1750},
-    {semester: "Overall", gpa: 3.393}];
+    {semester: "Spring 2018", gpa: 3.7750}, {semester: "Overall", gpa: 3.4533}];
 var inMajorGPA = [{semester: "Fall 2015", gpa: 0.00}, {semester: "Spring 2016", gpa: 4.00}, 
     {semester: "Fall 2016", gpa: 3.3500}, {semester: "Spring 2017", gpa: 3.5000}, {semester: "Fall 2017", gpa: 3.0000},
-    {semester: "Overall", gpa: 3.337}];
+    {semester: "Spring 2018", gpa: 3.8000}, {semester: "Overall", gpa: 3.4630}];
 
 var data = [overallGPA, inMajorGPA];
 var dataNames = ["Overall GPA", "In-Major GPA"];
