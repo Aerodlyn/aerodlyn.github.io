@@ -57,7 +57,7 @@
         <h1>PROJECTS</h1>
         <hr>
 
-        <a href="https://aerodlyn.github.io/AeroHelper">
+        <a href="https://github.com/Aerodlyn/AeroHelper" target="_blank">
             <div class="left-header">
                 <p>A</p>
             </div>
@@ -82,9 +82,9 @@
 
         <p>Click the icon to the left to view the GitHub page.</p>
 
-        <img class="project-gif" src="https://github.com/Aerodlyn/AeroHelper/blob/master/docs/Images/AeroHelper.gif?raw=true">
+        <!--<img class="project-gif" src="https://github.com/Aerodlyn/AeroHelper/blob/master/docs/Images/AeroHelper.gif?raw=true">-->
 
-        <a href="https://aerodlyn.github.io/Orionis">
+        <a href="https://github.com/Aerodlyn/Orionis" target="_blank">
             <div class="left-header">
                 <p>O</p>
             </div>
@@ -108,19 +108,33 @@
 
         <img class="project-gif" src="https://github.com/Aerodlyn/Orionis/blob/master/docs/Images/Intro_Warp.gif?raw=true">
 
-        <a href="">
+        <a href="http://hdl.handle.net/10919/83200" target="_blank">
             <div class="left-header">
                 <p>S</p>
             </div>
         </a>
 
         <p>
-            Satellite Image Finder
+            Satellite Image Finder was my senior capstone project (completed during the capstone course Multimedia / Hypertext),
+                which was supported by Reinventing Geospatial. The goal of the project was to implement a machine learning 
+                algorithm that is able to determine the locations of parking lots in a given image. For the purpose of this 
+                project,we defined a parking lot as a sequence of parking spaces as opposed to the entire paved lot. This 
+                significantly eased the workload of labeling training data. I was responsible for developing Python code that 
+                was integral to the input and output of the identification model.
         </p>
-        
-        <br>
-        <br>
-        <br>
+
+        <p>
+            The project is implemented using Tensorflow and is accessible through a Jupyter notebook. While the identification 
+                model is not perfect, it does a relatively good job of detecting parking lots given the relatively small 
+                dataset that it was trained on as well as certain limitations of the specific model we used (which can be found 
+                detailed in the report). The model appears to identify most parking lots that are relatively parallel to the 
+                axes of the image. This means that it will occasionally miss some, but what it does identify as a parking lot 
+                it is typically at least 90% certain that what it marked is a parking lot. It does not appear to ever label any 
+                false positives (as far as we were able to tell). The model does have issues with parking lots that have an 
+                angle relative to the axes of the image.
+        </p>
+
+        <p>Click the icon to the left to view the VTechWorks page.</p>
 
         <h1>COURSEWORK</h1>
         <hr>
