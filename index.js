@@ -1,9 +1,9 @@
 var overallGPA = [{semester: "Fall 2015", gpa: 3.2231}, {semester: "Spring 2016", gpa: 3.6214}, 
     {semester: "Fall 2016", gpa: 3.4250}, {semester: "Spring 2017", gpa: 3.5000}, {semester: "Fall 2017", gpa: 3.1750},
-    {semester: "Spring 2018", gpa: 3.7750}, {semester: "Overall", gpa: 3.4533}];
+    {semester: "Spring 2018", gpa: 3.7750}, {semester: "Fall 2018", gpa: 2.6750}, {semester: "Overall", gpa: 3.3470}];
 var inMajorGPA = [{semester: "Fall 2015", gpa: 0.00}, {semester: "Spring 2016", gpa: 4.00}, 
     {semester: "Fall 2016", gpa: 3.3500}, {semester: "Spring 2017", gpa: 3.5000}, {semester: "Fall 2017", gpa: 3.0000},
-    {semester: "Spring 2018", gpa: 3.8000}, {semester: "Overall", gpa: 3.4630}];
+    {semester: "Spring 2018", gpa: 3.8000}, {semester: "Fall 2018", gpa: 2.6750}, {semester: "Overall", gpa: 3.2530}];
 
 var data = [overallGPA, inMajorGPA];
 var dataNames = ["Overall GPA", "In-Major GPA"];
@@ -35,13 +35,9 @@ graph.append("g")
     .enter()
     .append("rect")
     .attr("x", function(d) {
-        var index = -1;
-        
         for (i = 0; i < data.length; i++) {
-            if (data[i].includes(d)) {
-                index = i;
+            if (data[i].includes(d))
                 break;
-            }
         }
 
         return x(d.semester) + i * (x.bandwidth() / data.length);
