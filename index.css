@@ -1,138 +1,15 @@
-:root {
-    --header-inner-line-color: #79AF13;
-    --header-outer-line-color: #AACA70;
+@media only screen and (min-width: 992px) {
+    .navbar .navbar-nav .nav-item .nav-link {
+        padding: 0 0.5em;
+    }
 
-    --header-background-color: #545454;
-    --header-text-color: #AACA70;
-
-    --page-header-color: #003448;
+    .navbar .navbar-nav .nav-item:nth-child(3) .nav-link {
+      border-right: 1px solid black;
+    }
 }
 
-body {
-    font-family: sans-serif;
-    text-align: justify;
-    text-indent: 2em;
-
-    margin: 0px;
-    padding: 0px;
-}
-
-p {
-    line-height: 1.5em;
-}
-
-div#header {
-    background-color: var(--header-background-color);
-    color: var(--header-text-color);
-
-    border-top: 0.075em solid var(--header-background-color);
-    border-bottom: 0.075em solid var(--header-background-color);
-}
-
-div#header hr.inner {
-    border: 0.035em solid var(--header-inner-line-color);
-}
-
-div#header hr.outer {
-    border: 0.125em solid var(--header-outer-line-color);
-}
-
-div#header div {
-    width: 75%;
-
-    margin: auto;
-}
-
-div#header div h2 {
-    font-size: 235%;
-    text-align: right;
-
-    margin: 0px;
-    padding: 150px 0px 0px 0px;
-}
-
-div#page {
-    width: 50em;
-
-    margin: auto;
-}
-
-div#page h1 {
-    font-size: 100%;
-    color: var(--page-header-color);
-
-    text-indent: 0em;
-
-    margin: 0.5em 0.5em -0.5em 0.5em;
-    padding: 0em;
-}
-
-div#page hr {
-    border: 0.125em solid var(--page-header-color);
-    
-    margin: 0.5em 0em -0.75em 0em;
-    padding: 0em;
-}
-
-div#page img#resume {
-    width: 60%;
-    float: right;
-}
-
-div#page img.project-gif {
-    width: 75%;
-    margin: auto;
-    
-    display: block;
-}
-
-div#page svg#gpa-graph {
-    width: 55%;
-
-    display: block;
-    margin: auto;
-    padding: 25px 200px;
-
-    overflow: visible;
-}
-
-div#page div.left-header {
-    width: 2.5em;
-    height: 2.5em;
-    margin: 25px 10px 0px 10px;
-
-    font-size: 1.75em;
-    text-align: center;
-    text-indent: 0em;
-
-    border: 0.125em solid var(--header-text-color);
-    border-radius: 50%;
-    
-    color: var(--header-text-color);
-    background-color: var(--header-background-color);
-}
-
-div#page div.left-header p {
-    width: 2.5em;
-    height: 2.75em;
-
-    vertical-align: middle;
-
-    display: table-cell;
-}
-
-div#page div.left-header {
-    float: left;
-}
-
-div#page p.courses {
-    text-indent: 0em;
-}
-
-/* d3 */
-path {
-    stroke: var(--page-header-color);
-    stroke-width: 1;
-
-    fill: none;
+@media only screen and (max-width: 992px) {
+    .navbar .navbar-nav .nav-item:nth-child(3) .nav-link {
+      border-bottom: 1px solid black;
+    }
 }

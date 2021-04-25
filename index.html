@@ -1,402 +1,443 @@
 <!doctype html>
 
-<head>
-    <title>Patrick Jahnig | Aerodlyn</title>
+<html lang = "html">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-</head>
+        <link
+            href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+            rel = "stylesheet"
+            integrity = "sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+            crossorigin = "anonymous"
+            >
 
-<body>
-    <div id="header">
-        <hr class="outer">
-        <hr class="inner">
+        <title>Patrick Jahnig | Aerodlyn</title>
 
-        <div>
-            <h2>PATRICK JAHNIG | AERODLYN</h2>
+        <link href = "index.css" rel = "stylesheet">
+    </head>
+
+    <body>
+        <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+            <div class = "container-fluid">
+                <a class = "navbar-brand" href = "#about-me">Patrick Jahnig | Aerodlyn</a>
+
+                <button
+                    class = "navbar-toggler"
+                    type = "button"
+                    data-bs-toggle = "collapse"
+                    data-bs-target = "#navbar-content"
+                    aria-controls = "navbar-content"
+                    aria-expanded = "false"
+                    aria-label = "Toggle navigation"
+                    >
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+
+                <div class = "collapse navbar-collapse" id = "navbar-content">
+                    <ul class = "navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "#coursework">Coursework</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "https://www.linkedin.com/in/patrick-jahnig/" target = "_blank">LinkedIn</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "Resources/Resume.pdf" target = "_blank">Resume</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "#budgie">budgie</a>
+                        </li>
+
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "#mu">mu</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "#orionis">orionis</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class = "container my-3">
+            <h1 id = "about-me">About me</h1>
+            <p class = "lead">Hey!</p>
+            <p>This is a simple site where I have some information about myself and my projects.</p>
+            <p>
+                I graduated cum laude with a Bachelor's of Science from Virginia Tech, majoring in
+                computer science. In school, I mostly focused on front-end or graphics-related
+                electives as that is the area of development that interests me the most (hence why
+                most of my projects are in that area).
+            </p>
+            <p>
+                Currently, in my free time I'm usually working on a couple of personal projects that
+                I have detailed below, as well as learning new programming languages and concepts.
+                At the moment, I have been trying my hand at C# and Rust. I am currently working as
+                an Software Engineer for Fidelity Investments in Durham, North Carolina where I work
+                on a team that helps enable and support the acquisition and loyalty of customers.
+            </p>
+
+            <p>Click the 'Resume' link on the navbar to view my resume.</p>
+
+            <h1>Projects</h1>
+            <div class = "card-group mb-0 mb-lg-3">
+                <div class = "card" id = "budgie">
+                    <div class = "card-header">budgie</div>
+                    <div class = "card-body">
+                        <p class = "lead">
+                            budgie is designed as a budgeting app that helps you know when bills are
+                            due and how much money is needed for bills before a paycheck comes.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class = "card" id = "mu">
+                    <div class = "card-header">mu</div>
+                    <div class = "card-body">
+                        <p class = "lead">
+                            mu is a simple project that takes inspiration after traditional blogs
+                            and reddit.
+                        </p>
+                        <p>
+                            mu uses <a href = "https://www.djangoproject.com/" target = "_blank">Django</a>
+                            as the web framework and is stylized using <a href = "https://getbootstrap.com" target = "_blank">Bootstrap</a>.
+                        </p>
+                        <p>
+                            Click <a href = "https://mu.aerodlyn.io" target = "_blank">here</a> to
+                            visit the page, or click <a href = "https://github.com/Aerodlyn/mu" target = "_blank">here</a>
+                            to visit the GitHub page.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class = "card" id = "orionis">
+                    <div class = "card-header">orionis</div>
+                    <div class = "card-body">
+                        <p class = "lead">
+                            Orionis is a 2D fleet strategy game that pits two fleets lead by a
+                            flagship against each other.
+                        </p>
+                    </div>
+                </div>
+            </div>
+                
+            <div class = "card-group mb-3">
+                <div class = "card" id = "sat-image">
+                    <div class = "card-header">satellite image parking lot finder</div>
+                    <div class = "card-body">
+                        <p class = "lead">
+                            Satellite Image Finder was my senior capstone project (completed during
+                            the capstone course Multimedia / Hypertext), which was supported by
+                            Reinventing Geospatial.
+                        </p>
+                        <p>
+                            The goal of the project was to implement a machine learning algorithm
+                            that is able to determine the locations of parking lots in a given image.
+                            For the purpose of this project, we defined a parking lot as a sequence
+                            of parking spaces as opposed to the entire paved lot. This significantly
+                            eased the workload of labeling training data. I was responsible for
+                            developing Python code that was integral to the input and output of the
+                            identification model. 
+                        </p>
+                        <p>
+                            The project is implemented using Tensorflow and is accessible through a
+                            Jupyter notebook. While the identification model is not perfect, it does
+                            a relatively good job of detecting parking lots given the relatively
+                            small dataset that it was trained on as well as certain limitations of
+                            the specific model we used (which can be found detailed in the report).
+                            The model appears to identify most parking lots that are relatively
+                            parallel to the axes of the image. This means that it will occasionally
+                            miss some, but what it does identify as a parking lot it is typically at
+                            least 90% certain that what it marked is a parking lot. It does not
+                            appear to ever label any false positives (as far as we were able to
+                            tell). The model does have issues with parking lots that have an angle
+                            relative to the axes of the image.
+                        </p>
+                        <p>
+                            Click <a href = "https://vtechworks.lib.vt.edu/handle/10919/83200" target = "_blank">here</a>
+                            to view the VTechWorks page on the project.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h1 id = "coursework">Coursework</h1>
+            <p>
+                Below I will give a brief description (provided by Tech's course catalog) of each
+                course that I have taken as well as when.
+            </p>
+            <p>
+                I have most of my coursework on GitLab, but the repositories are private. If you
+                would like to view them, please email me so I can give you access or I can send you
+                an archive of the projects. 
+            </p>
+            <ul class = "list-group list-group-flush">
+                <li class = "list-group-item">
+                    <h5>Fall 2015</h5>
+                    <p>
+                        <b>General Chemistry & Lab</b> - Principles of the science, character of the
+                        elements and their more important compounds, solution of chemical problems,
+                        and important applications.
+                    </p>
+                    <p>
+                        <b>Foundations of Engineering</b> - A first-year sequence to introduce
+                        general engineering students to the profession, including data collection
+                        and analysis, engineering, problem-solving, mathematical modeling, design,
+                        contemporary software tools, professional practices and expectations (e.g.
+                        communication, teamwork, ethics), and the diversity of fields and majors
+                        within engineering.
+                    </p>
+                    <p>
+                        <b>Introduction to Science Fiction</b> - This course introduces a variety of
+                        speculative works within the genres of science fiction and fantasy.
+                        Attention will be given to the development and principal characteristics of
+                        each genre. Emphasis is placed on the social, cultural, and historical
+                        contexts in which specific speculative texts have been produced.
+                    </p>
+                    <p>
+                        <b>First Year Galileo Seminar</b> - Success strategies that are designed for
+                        first-year male engineering students who are residents of the Galileo
+                        learning community are presented. Students are provided information on study
+                        skills; resources and academic support for Virginia Tech students; gender
+                        issues in engineering; service learning; leadership; technology; and the
+                        College of Engineering's department/majors.
+                    </p>
+                    <p>
+                        <b>Vector Geometry</b> - Course description not available, as course is no
+                        longer offered. I had to take this to receive credit for my transfer credit
+                        of multi-variable calculus.
+                    </p>
+                </li>
+                <li class = "list-group-item">
+                    <h5>Spring 2016</h5>
+                    <p>
+                        <b>Foundations of Engineering</b> - A first-year sequence to introduce
+                        general engineering students to the profession, including data collection
+                        and analysis, engineering, problem-solving, mathematical modeling, design,
+                        contemporary software tools, professional practices and expectations (e.g.
+                        communication, teamwork, ethics), and the diversity of fields and majors
+                        within engineering.
+                    </p>
+                    <p>
+                        <b>Insects and Human Society</b> - An appreciation of the past, present and
+                        future role of insects with human society. Includes how to identify common
+                        insects and other arthropods, the effects of insects on human history;
+                        diseases transmitted by insects and their worldwide impact; insects and
+                        their influence on our language, literature, and the arts; management of
+                        pests of plants, animals, and its effects on environmental pollution; and
+                        practical information of how to recognize and manage important insects and
+                        arthropods, such as termites in houses and fleas on animals. 
+                    </p>
+                    <p>
+                        <b>Introduction to Detective Fiction</b> - This course introduces students
+                        to classic and modern texts of detective fiction from a variety of
+                        historical periods and cultural traditions.
+                    </p>
+                    <p>
+                        <b>Introduction to Software Design</b> - Fundamental concepts of programming
+                        from an object-oriented perspective. Basic software engineering principles
+                        and programming skills in a programming language that supports the
+                        object-oriented paradigm. Simple data types, control structures, array and
+                        string data structures, basic algorithms, testing and debugging. A basic
+                        model of the computer as an abstract machine. Modeling and problem-solving
+                        skills applicable to programming at this level.
+                    </p>
+                    <p>
+                        <b>World Regions</b> - Human and physical patterns of major regions of the
+                        world. Concepts and perspectives of geography as a social science; linkages
+                        and interdependence of nations and regions. 
+                    </p>
+                </li>
+                <li class = "list-group-item">
+                    <h5>Fall 2016</h5>
+                    <p>
+                        <b>Computer Science First Year Seminar</b> - An introduction to academic and
+                        career planning for computer science majors.
+                    </p>
+                    <p>
+                        <b>Introduction to Problem Solving in Computer Science</b> - This course
+                        introduces the student to a broad range of heuristics for solving problems
+                        in a range of settings that are relevant to computation. Emphasis on
+                        problem-solving techniques that aid programmers and computer scientists.
+                        Heuristics for solving problems "in the small" (classical math and
+                        word problems), generating potential solutions to "real-life" problems
+                        encountered in the profession, problem solving through computation, and
+                        problem solving in teams. 
+                    </p>
+                    <p>
+                        <b>Software Design and Data Structures</b> - A programming-intensive
+                        exploration of software design concepts and implementation techniques.
+                        Builds on knowledge of fundamental object-oriented programming. Advanced
+                        object-oriented software design, algorithm development and analysis, and
+                        classic data structures. Includes a team-based, semester-long software
+                        project.
+                    </p>
+                    <p>
+                        <b>Introduction to Short Fiction</b> - Analysis of short fiction and novellas
+                        from different historical periods and cultures. Emphasis on the structural
+                        elements of fiction, on its flexibility as a form for exploring human
+                        desires, conflicts, and values, and on its employment by writers from
+                        different cultures, ethnicities, and genders.
+                    </p>
+                    <p>
+                        <b>Introduction to Discrete Mathematics</b> - Emphasis on topics relevant to
+                        computer science. Topics include logic propositional calculus, set theory,
+                        relations, functions, mathematical induction, elementary number theory and
+                        Boolean algebra. 
+                    </p>
+                </li>
+                <li class = "list-group-item">
+                    <h5>Spring 2017</h5>
+                    <p>
+                        <b>Public Speaking</b> - Strategies and practice for speaking to specific
+                        audiences. Ethical considerations for message preparation, development,
+                        presentation, and evaluation.
+                    </p>
+                    <p>
+                        <b>Introduction to Computer Organization I</b> - An introduction to the
+                        design and operation of digital computers. Works up from the logic gate
+                        level to combinational and sequential circuits, information representation,
+                        computer arithmetic, arithmetic/logic units, control unit design, basic
+                        computer organization, relationships between high level programming
+                        languages and instruction set architectures. 
+                    </p>
+                    <p>
+                        <b>Human-Computer Interaction</b> - Survey of human-computer interaction
+                        concepts, theory, and practice. Basic components of human-computer
+                        interaction. Interdisciplinary underpinnings. Informed and critical
+                        evaluation of computer-based technology. User-oriented perspective, rather
+                        than system-oriented, with two thrusts: human (cognitive, social) and
+                        technological (input/output, interactions styles, devices). Design
+                        guidelines, evaluation methods, participatory design, communication between
+                        users and system developers. 
+                    </p>
+                    <p>
+                        <b>Technical Writing</b> - Principles and procedure of technical writing;
+                        attention to analyzing audience and purpose, organizing information,
+                        designing graphic aids, and writing such specialized forms as abstracts,
+                        instructions, and proposals. 
+                    </p>
+                </li>
+                <li class = "list-group-item">
+                    <h5>Fall 2017</h5>
+                    <p>
+                        <b>Introduction to Computer Organization II</b> - An introduction to the
+                        design and operation of digital computers. Instruction formats and
+                        construction, addressing modes, instruction execution, memory hierarchy
+                        operation and performance, pipelining, input/output, and the relationships
+                        between high level programming languages and machine language. 
+                    </p>
+                    <p>
+                        <b>Data Structures and Algorithms</b> - Advanced data structures and
+                        analysis of data structure and algorithm performance. Sorting, searching,
+                        hashing, and advanced tree structures and algorithms. File system
+                        organization and access methods. Course projects require advanced
+                        problem-solving, design, and implementation skills. 
+                    </p>
+                    <p>
+                        <b>Introduction to GUI Programming / Graphics</b> - Design and
+                        implementation of object-oriented graphical user interfaces (GUI) and
+                        two-dimensional computer graphics systems. Implementation methodologies
+                        including callbacks, handlers, event listeners, design patterns,
+                        layout managers, and architectural models. Mathematical foundations of
+                        computer graphics applied to fundamental algorithms for clipping,
+                        scan conversion, affine and convex linear transformations, projections,
+                        viewing, structuring, and modeling. 
+                    </p>
+                    <p>
+                        <b>Probability and Statistics for Electrical Engineers</b> - Introduction to
+                        the concepts of probability, random variables, estimation, hypothesis
+                        testing, regression, and analysis of variance with emphasis on application
+                        in electrical engineering. 
+                    </p>
+                </li>
+                <li class = "list-group-item">
+                    <h5>Spring 2018</h5>
+                    <p>
+                        <b>Comparative Languages</b> - This course in programming language
+                        constructs emphasizes the run-time behavior of programs. The languages are
+                        studied from two points of view: (1) the fundamental elements of languages
+                        and their inclusion in commercially available systems; and (2) the
+                        differences between implementations of common elements in languages. 
+                    </p>
+                    <p>
+                        <b>Professionalism in Computing</b> - Studies the ethical, social, and
+                        professional concerns of the computer science field. Covers the social
+                        impact of the computer, implications and effects of computers on society,
+                        and the responsibilities of computer professionals in directing the emerging
+                        technology. The topics are studied through case studies of reliable,
+                        risk-free technologies, and systems that provide user friendly processes.
+                        Specific studies are augmented by an overview of the history of computing,
+                        interaction with industrial partners and computing professionals, and
+                        attention to the legal and ethical responsibilities of professionals. This
+                        is a web-supported course, incorporating writing intensive exercises, making
+                        extensive use of active learning technologies. 
+                    </p>
+                    <p>
+                        <b>Computer Science Senior Seminar</b> - No description available. 
+                    </p>
+                    <p>
+                        <b>Multimedia / Hypertext</b> - Introduces the architectures, concepts,
+                        data, hardware, methods, models, software, standards, structures,
+                        technologies, and issues involved with: networked multimedia information and
+                        systems, hypertext and hypermedia, networked information videoconferencing,
+                        authoring/electronic publishing, and information access. Coverage includes
+                        how to capture, represent, link, store, compress, browse, search, retrieve,
+                        manipulate, interact with, synchronize, perform, and present: text,
+                        drawings, still images, animations, audio, video, and their combinations
+                        (including in digital libraries). 
+                    </p>
+                    <p>
+                        <b>Applied Combinatorics</b> - Emphasis on concepts related to computational
+                        theory and formal languages. Includes topics in graph theory such as paths,
+                        circuits, and trees. Topics from combinatorics such as permutations,
+                        generating functions, and recurrence relations. 
+                    </p>
+                </li>
+                <li class = "list-group-item">
+                    <h5>Fall 2018</h5>
+                    <p>
+                        <b>Computer Systems</b> - Introduction to computer systems as they are
+                        relevant to application programmers today, with emphasis on operating system
+                        principles. Operating system design and architectures; processes; threads,
+                        synchronization techniques, deadlock; CPU scheduling; system call
+                        interfaces, system level I/O and file management; shell programming;
+                        separate compilation, loading and linking; inter-process communication
+                        (IPC); virtual and physical memory management and garbage collection;
+                        network protocols and programming; virtualization; performance analysis and
+                        optimization. 
+                    </p>
+                    <p>
+                        <b>Data and Algorithm Analysis</b> - Data structures and algorithms from an
+                        analytical perspective. Theoretical analysis of algorithm efficiency.
+                        Comparing algorithms with respect to space and run-time requirements.
+                        Analytical methods for describing theoretical and practical bounds on
+                        performance. Constraints affecting problem solvability. 
+                    </p>
+                    <p>
+                        <b>Introduction to Database Management Systems</b> - Emphasis on
+                        introduction of the basic data base models, corresponding logical and
+                        physical data structures, comparisons of models, logical data design, and
+                        data base usage. Terminology, historical evolution, relationships,
+                        implementation, data base personnel, future trends, applications,
+                        performance considerations, data integrity.
+                    </p>
+                    <p>
+                        <b>Introduction to Data Analytics and Visualization</b> - Basic principles
+                        and techniques in data analytics; methods for the collection of, storing,
+                        accessing, and manipulating standard-size and large datasets; data
+                        visualization; and identifying sources of bias.
+                    </p>
+                </li>
+            </ul>
         </div>
 
-        <hr class="inner">
-        <hr class="outer">
-    </div>
-
-    <div id="page">
-        <a href="Resources/Resume.pdf" target="_blank"><img id="resume" src="Images/Resume.png" alt="Resume"></a>
-
-        <h1>WELCOME</h1>
-        <hr>
-
-        <p>
-            Hullo and welcome! This is a simple site where I have some information 
-                about myself and my projects.
-        </p>
-
-        <p>
-            To the right is the current copy of my resume, which was last updated December 2019. To view the document in a 
-                larger size or to download it, please click the image.
-        </p>
-
-        <h1>ABOUT ME</h1>
-        <hr>
-        
-        <p>
-            I graduated cum laude with a Bachelor's of Science from Virginia Tech, majoring in computer science. Small fun fact, I have 
-                been considered a senior by Virginia Tech since second semester Freshman year due to the number of credits I had after 
-                completing high school.
-        </p>
-
-        <p>
-            Currently, in my free time I'm usually working on a couple of personal projects that I have detailed below, as well 
-                as learning new programming languages and concepts. At the moment, I have been trying my hand at Rust. I am currently
-                working as an associate Software Engineer for Fidelity Investments in Durham, North Carolina.
-        </p>
-
-        <h1>PROJECTS</h1>
-        <hr>
-
-        <a href="https://github.com/Aerodlyn/AeroHelper" target="_blank">
-            <div class="left-header">
-                <p>A</p>
-            </div>
-        </a>
-
-        <p>
-            Early in the development of Orionis, the ships within the game needed to have a polygonal
-                collision bounds so that I could check if a projectile was colliding with a ship. I decided
-                to use an array of floating point numbers to represent x and y coordinates. These coordinates
-                were positioned relative to the center of the ship's coordinate space. I couldn't find a tool 
-                that I could reliably use to create this arrays. At first I used an image manipulation program 
-                to get the coordinates of where I wanted the vertex to be, and did some simple math to convert 
-                it in the format that it needed to be. Simply put, this was very tedious even for small ships. 
-                So, I decided to create a program that I could use to make the process much easier and quicker.
-        </p>
-
-        <p>
-            And so I began to work on AeroHelper. The program is relatively simple, the basis being using an 
-                image (sprite) as the basis of where you click, the locations of your clicks being the vertices 
-                of a polygonal shape.
-        </p>
-
-        <p>Click the icon to the left to view the GitHub page.</p>
-
-        <!--<img class="project-gif" src="https://github.com/Aerodlyn/AeroHelper/blob/master/docs/Images/AeroHelper.gif?raw=true">-->
-
-        <a href="https://github.com/Aerodlyn/Orionis" target="_blank">
-            <div class="left-header">
-                <p>O</p>
-            </div>
-        </a>
-
-        <p>
-            Orionis is a 2D space-themed turn-based fleet strategy game where you and your fleet face off against a 
-                computer controlled fleet. You are in direct control of a flagship, a unique and powerful asset in your 
-                fleet. Initially you must use this flagship to bring in additional ships, however the number of ships 
-                that you can bring in is limited by the type of ships you want. From there you must use strategy and a 
-                bit of luck to destroy the enemy flagship.
-        </p>
-
-        <p>
-            The game is currently focused on a skirmish style gamemode where the player faces off against a 
-                computer-controlled opponent. I do have a plan to eventually add a story to the game, but only after 
-                gameplay is fully implemented.
-        </p>
-
-        <p>Click the icon to the left to view the GitHub page.</p>
-
-        <img class="project-gif" src="https://github.com/Aerodlyn/Orionis/blob/master/docs/Images/Orionis.gif?raw=true">
-
-        <a href="http://hdl.handle.net/10919/83200" target="_blank">
-            <div class="left-header">
-                <p>S</p>
-            </div>
-        </a>
-
-        <p>
-            Satellite Image Finder was my senior capstone project (completed during the capstone course Multimedia / Hypertext),
-                which was supported by Reinventing Geospatial. The goal of the project was to implement a machine learning 
-                algorithm that is able to determine the locations of parking lots in a given image. For the purpose of this 
-                project,we defined a parking lot as a sequence of parking spaces as opposed to the entire paved lot. This 
-                significantly eased the workload of labeling training data. I was responsible for developing Python code that 
-                was integral to the input and output of the identification model.
-        </p>
-
-        <p>
-            The project is implemented using Tensorflow and is accessible through a Jupyter notebook. While the identification 
-                model is not perfect, it does a relatively good job of detecting parking lots given the relatively small 
-                dataset that it was trained on as well as certain limitations of the specific model we used (which can be found 
-                detailed in the report). The model appears to identify most parking lots that are relatively parallel to the 
-                axes of the image. This means that it will occasionally miss some, but what it does identify as a parking lot 
-                it is typically at least 90% certain that what it marked is a parking lot. It does not appear to ever label any 
-                false positives (as far as we were able to tell). The model does have issues with parking lots that have an 
-                angle relative to the axes of the image.
-        </p>
-
-        <p>Click the icon to the left to view the VTechWorks page.</p>
-
-        <img class="project-gif" src="Images/Parking-Lot.png">
-
-        <p>The above is an example of what the model outputs.</p>
-
-        <h1>COURSEWORK</h1>
-        <hr>
-
-        <p>
-            Below I will give a brief description (provided by Tech's course catalog) of each course
-                that I have taken as well as when. Also below is a simple graph of my in-major and overall
-                GPA over the course of my time at Tech.
-        </p>
-
-        <svg id="gpa-graph"></svg>
-
-        <p>
-            I have most of my coursework on GitLab, but the repositories are private. If you would like to 
-                view them, please email me so I can give you access.
-        </p>
-
-        <h1>FALL 2015</h1>
-        <hr>
-
-        <p class="courses">
-            <b>General Chemistry & Lab</b> - Principles of the science, character of the elements and 
-                their more important compounds, solution of chemical problems, and important 
-                applications.
-        </p>
-
-        <p class="courses">
-            <b>Foundations of Engineering</b> - A first-year sequence to introduce general 
-                engineering students to the profession, including data collection and analysis, 
-                engineering, problem-solving, mathematical modeling, design, contemporary software 
-                tools, professional practices and expectations (e.g. communication, teamwork, 
-                ethics), and the diversity of fields and majors within engineering.
-        </p>
-
-        <p class="courses">
-            <b>Introduction to Science Fiction</b> - This course introduces a variety of speculative works 
-                within the genres of science fiction and fantasy. Attention will be given to the 
-                development and principal characteristics of each genre. Emphasis is placed on the 
-                social, cultural, and historical contexts in which specific speculative texts have 
-                been produced.
-        </p>
-
-        <p class="courses">
-            <b>First Year Galileo Seminar</b> - Success strategies that are designed for first-year 
-                male engineering students who are residents of the Galileo learning community are 
-                presented. Students are provided information on study skills; resources and academic 
-                support for Virginia Tech students; gender issues in engineering; service learning; 
-                leadership; technology; and the College of Engineering's department/majors.
-        </p>
-
-        <p class="courses">
-            <b>Vector Geometry</b> - Course description not available, as course is no longer offered.
-                I had to take this to receive credit for my transfer credit of multi-variable calculus.
-        </p>
-
-        <h1>SPRING 2016</h1>
-        <hr>
-
-        <p class="courses">
-            <b>Foundations of Engineering</b> - A first-year sequence to introduce general engineering 
-                students to the profession, including data collection and analysis, engineering 
-                problem-solving, mathematical modeling design, contemporary software tools, professional 
-                practices and expectations (e.g. communication, teamwork, ethics), and the diversity of 
-                fields and majors within engineering.
-        </p>
-
-        <p class="courses">
-            <b>Insects and Human Society</b> - An appreciation of the past, present and future role of 
-                insects with human society. Includes how to identify common insects and other arthropods, 
-                the effects of insects on human history; diseases transmitted by insects and their worldwide 
-                impact; insects and their influence on our language, literature, and the arts; management of 
-                pests of plants, animals, and its effects on environmental pollution; and practical 
-                information of how to recognize and manage important insects and arthropods, such as 
-                termites in houses and fleas on animals.
-        </p>
-
-        <p class="courses">
-            <b>Introduction to Detective Fiction</b> - This course introduces students to classic and modern texts 
-                of detective fiction from a variety of historical periods and cultural traditions.
-        </p>
-
-        <p class="courses">
-            <b>Introduction to Software Design</b> - Fundamental concepts of programming from an object-oriented 
-                perspective. Basic software engineering principles and programming skills in a programming 
-                language that supports the object-oriented paradigm. Simple data types, control structures, 
-                array and string data structures, basic algorithms, testing and debugging. A basic model of 
-                the computer as an abstract machine. Modeling and problem-solving skills applicable to 
-                programming at this level.
-        </p>
-
-        <p class="courses">
-            <b>World Regions</b> - Human and physical patterns of major regions of the world. Concepts and 
-                perspectives of geography as a social science; linkages and interdependence of nations and 
-                regions.
-        </p>
-
-        <h1>FALL 2016</h1>
-        <hr>
-
-        <p class="courses">
-            <b>Computer Science First Year Seminar</b> - An introduction to academic and career planning for computer 
-                science majors.
-        </p>
-
-        <p class="courses">
-            <b>Introduction to Problem Solving in Computer Science</b> - This course introduces the student to a broad range of 
-                heuristics for solving problems in a range of settings that are relevant to computation. Emphasis on 
-                problem-solving techniques that aid programmers and computer scientists. Heuristics for solving problems "in 
-                the small" (classical math and word problems), generating potential solutions to "real-life" problems 
-                encountered in the profession, problem solving through computation, and problem solving in teams.
-        </p>
-
-        <p class="courses">
-            <b>Software Design and Data Structures</b> - A programming-intensive exploration of software design concepts and 
-                implementation techniques. Builds on knowledge of fundamental object-oriented programming. Advanced 
-                object-oriented software design, algorithm development and analysis, and classic data structures. Includes a 
-                team-based, semester-long software project.
-        </p>
-
-        <p class="courses">
-            <b>Introduction to Short Fiction</b> - Analysis of short fiction and novellas from different historical periods and 
-                cultures. Emphasis on the structural elements of fiction, on its flexibility as a form for exploring human 
-                desires, conflicts, and values, and on its employment by writers from different cultures, ethnicities, and 
-                genders.
-        </p>
-
-        <p class="courses">
-            <b>Introduction to Discrete Mathematics</b> - Emphasis on topics relevant to computer science. Topics include logic 
-                propositional calculus, set theory, relations, functions, mathematical induction, elementary number theory and 
-                Boolean algebra.
-        </p>
-
-        <h1>SPRING 2017</h1>
-        <hr>
-
-        <p class="courses">
-            <b>Public Speaking</b> - Strategies and practice for speaking to specific audiences. Ethical considerations for 
-                message preparation, development, presentation, and evaluation.
-        </p>
-
-        <p class="courses">
-            <b>Introduction to Computer Organization I</b> - An introduction to the design and operation of digital computers. 
-                Works up from the logic gate level to combinational and sequential circuits, information representation, 
-                computer arithmetic, arithmetic/logic units, control unit design, basic computer organization, relationships 
-                between high level programming languages and instruction set architectures.
-        </p>
-
-        <p class="courses">
-            <b>Human-Computer Interaction</b> - Survey of human-computer interaction concepts, theory, and practice. Basic 
-                components of human-computer interaction. Interdisciplinary underpinnings. Informed and critical evaluation of 
-                computer-based technology. User-oriented perspective, rather than system-oriented, with two thrusts: human 
-                (cognitive, social) and technological (input/output, interactions styles, devices). Design guidelines, 
-                evaluation methods, participatory design, communication between users and system developers.
-        </p>
-
-        <p class="courses">
-            <b>Technical Writing</b> - Principles and procedure of technical writing; attention to analyzing audience and 
-                purpose, organizing information, designing graphic aids, and writing such specialized forms as abstracts, 
-                instructions, and proposals.
-        </p>
-
-        <h1>FALL 2017</h1>
-        <hr>
-
-        <p class="courses">
-            <b>Introduction to Computer Organization II</b> - An introduction to the design and operation of digital computers. 
-                Instruction formats and construction, addressing modes, instruction execution, memory hierarchy operation and 
-                performance, pipelining, input/output, and the relationships between high level programming languages and 
-                machine language.
-        </p>
-
-        <p class="courses">
-            <b>Data Structures and Algorithms</b> - Advanced data structures and analysis of data structure and algorithm 
-                performance. Sorting, searching, hashing, and advanced tree structures and algorithms. File system organization 
-                and access methods. Course projects require advanced problem-solving, design, and implementation skills.
-        </p>
-
-        <p class="courses">
-            <b>Introduction to GUI Programming / Graphics</b> - Design and implementation of object-oriented graphical user 
-                interfaces (GUI) and two-dimensional computer graphics systems. Implementation methodologies including 
-                callbacks, handlers, event listeners, design patterns, layout managers, and architectural models. Mathematical 
-                foundations of computer graphics applied to fundamental algorithms for clipping, scan conversion, affine and 
-                convex linear transformations, projections, viewing, structuring, and modeling.
-        </p>
-
-        <p class="courses">
-            <b>Probability and Statistics for Electrical Engineers</b> - Introduction to the concepts of probability, random 
-                variables, estimation, hypothesis testing, regression, and analysis of variance with emphasis on application in 
-                electrical engineering.
-        </p>
-
-        <h1>SPRING 2018</h1>
-        <hr>
-
-        <p class="courses">
-            <b>Comparative Languages</b> - This course in programming language constructs emphasizes the run-time behavior of 
-                programs. The languages are studied from two points of view: (1) the fundamental elements of languages and 
-                their inclusion in commercially available systems; and (2) the differences between implementations of common 
-                elements in languages.
-        </p>
-
-        <p class="courses">
-            <b>Professionalism in Computing</b> - Studies the ethical, social, and professional concerns of the computer 
-                science field. Covers the social impact of the computer, implications and effects of computers on society, and 
-                the responsibilities of computer professionals in directing the emerging technology. The topics are studied 
-                through case studies of reliable, risk-free technologies, and systems that provide user friendly processes. 
-                Specific studies are augmented by an overview of the history of computing, interaction with industrial partners 
-                and computing professionals, and attention to the legal and ethical responsibilities of professionals. This is 
-                a web-supported course, incorporating writing intensive exercises, making extensive use of active learning 
-                technologies.
-        </p>
-
-        <p class="courses">
-            <b>Computer Science Senior Seminar</b> - No description available.
-        </p>
-
-        <p class="courses">
-            <b>Multimedia / Hypertext</b> - Introduces the architectures, concepts, data, hardware, methods, models, software, 
-                standards, structures, technologies, and issues involved with: networked multimedia information and systems, 
-                hypertext and hypermedia, networked information videoconferencing, authoring/electronic publishing, and 
-                information access. Coverage includes how to capture, represent, link, store, compress, browse, search, 
-                retrieve, manipulate, interact with, synchronize, perform, and present: text, drawings, still images, 
-                animations, audio, video, and their combinations (including in digital libraries). 
-        </p>
-
-        <p class="courses">
-            <b>Applied Combinatorics</b> - Emphasis on concepts related to computational theory and formal languages. Includes 
-                topics in graph theory such as paths, circuits, and trees. Topics from combinatorics such as permutations, 
-                generating functions, and recurrence relations. 
-        </p>
-
-        <h1>FALL 2018</h1>
-        <hr>
-
-        <p class="courses">
-            <b>Computer Systems</b> - Introduction to computer systems as they are relevant to application programmers today, with 
-                emphasis on operating system principles. Operating system design and architectures; processes; threads, synchronization 
-                techniques, deadlock; CPU scheduling; system call interfaces, system level I/O and file management; shell programming; 
-                separate compilation, loading and linking; inter-process communication (IPC); virtual and physical memory management 
-                and garbage collection; network protocols and programming; virtualization; performance analysis and optimization.
-        </p>
-
-        <p class="courses">
-            <b>Data and Algorithm Analysis</b> - Data structures and algorithms from an analytical perspective. Theoretical analysis of 
-                algorithm efficiency. Comparing algorithms with respect to space and run-time requirements. Analytical methods for 
-                describing theoretical and practical bounds on performance. Constraints affecting problem solvability.
-        </p>
-
-        <p class="courses">
-            <b>Introduction to Database Management Systems</b> - Emphasis on introduction of the basic data base models, corresponding 
-                logical and physical data structures, comparisons of models, logical data design, and data base usage. Terminology, 
-                historical evolution, relationships, implementation, data base personnel, future trends, applications, performance 
-                considerations, data integrity.
-        </p>
-
-        <p class="courses">
-            <b>Introduction to Data Analytics and Visualization</b> - Basic principles and techniques in data analytics; methods for 
-                the collection of, storing, accessing, and manipulating standard-size and large datasets; data visualization; and 
-                identifying sources of bias.
-        </p>
-    </div>
-
-    <script src="index.js"></script>
-</body>
+        <script
+            src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity = "sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin = "anonymous"
+            >
+        </script>
+    </body>
+</html>
