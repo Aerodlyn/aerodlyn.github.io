@@ -14,11 +14,13 @@ export default function Navigation(props) {
         </div>
         <div class="flex-none hidden lg:block">
           <ul class="menu menu-horizontal p-0">
-            <NavigationLink target={props.links.blog} title="Blog"></NavigationLink>
+            <NavigationLink target={props.links.blog} title="Blog" disabled></NavigationLink>
+            <NavigationLink target={props.links.bricks} title="Bricks & Studs" disabled></NavigationLink>
             <NavigationLink target={props.links.budgie} title="budgie"></NavigationLink>
             <NavigationLink target={props.links.mu} title="Mu"></NavigationLink>
-            <NavigationLink target={props.links.orionis} title="Orionis"></NavigationLink>
+            <NavigationLink target={props.links.orionis} title="Orionis" disabled></NavigationLink>
             <NavigationLink target={props.links.resume} title="Resume"></NavigationLink>
+            <NavigationLink target={props.links.satellite} title="Satellite Image Parking Lot Finder"></NavigationLink>
           </ul>
         </div>
       </nav>

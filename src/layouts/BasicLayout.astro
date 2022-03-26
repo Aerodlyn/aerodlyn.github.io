@@ -11,10 +11,12 @@ const {
 
 const links = {
   blog: "/blog",
+  bricks: "https://bricks-studs.aerodlyn.io",
   budgie: "https://budgie.aerodlyn.io",
   mu: "https://mu.aerodlyn.io",
   orionis: "https://orionis.aerodlyn.io",
-  resume: "https://rxresu.me/psj516/resume"
+  resume: "https://rxresu.me/psj516/resume",
+  satellite: "https://vtechworks.lib.vt.edu/handle/10919/83200"
 };
 ---
 
@@ -42,11 +44,13 @@ const links = {
       <div class="drawer-side">
         <label for="nav-drawer" class="drawer-overlay"></label> 
         <ul class="menu p-4 overflow-y-auto w-60 md:w-80 bg-neutral text-neutral-content shadow-lg">
-          <NavigationLink target={links.blog} title="Blog"></NavigationLink>
+          <NavigationLink target={links.blog} title="Blog" disabled></NavigationLink>
+          <NavigationLink target={links.bricks} title="Bricks & Studs" disabled></NavigationLink>
           <NavigationLink target={links.budgie} title="Budgie"></NavigationLink>
           <NavigationLink target={links.mu} title="Mu"></NavigationLink>
-          <NavigationLink target={links.orionis} title="Orionis"></NavigationLink>
+          <NavigationLink target={links.orionis} title="Orionis" disabled></NavigationLink>
           <NavigationLink target={links.resume} title="Resume"></NavigationLink>
+          <NavigationLink target={links.satellite} title="Satellite Image Parking Lot Finder"></NavigationLink>
         </ul>
       </div>
     </div>
