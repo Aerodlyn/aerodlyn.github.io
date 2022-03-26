@@ -1,0 +1,55 @@
+---
+import '../styles/global.css';
+
+import Footer from "../components/Footer";
+import Navigation from "../components/Navigation";
+import NavigationLink from "../components/NavigationLink";
+
+const {
+  title
+} = Astro.props;
+
+const links = {
+  blog: "/blog",
+  budgie: "https://budgie.aerodlyn.io",
+  mu: "https://mu.aerodlyn.io",
+  orionis: "https://orionis.aerodlyn.io",
+  resume: "https://rxresu.me/psj516/resume"
+};
+---
+
+<!doctype html>
+<html lang="en" data-theme="emerald">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{title}</title>
+	  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <div class="drawer min-h-screen">
+      <input id="nav-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col min-h-full">
+        <Navigation links={links}></Navigation>
+
+        <article class="max-w-prose sm:mx-auto p-3 bg-primary-content ring ring-neutral text-neutral pb-16">
+          <slot/>
+        </article>
+
+      </div>
+
+      <div class="drawer-side">
+        <label for="nav-drawer" class="drawer-overlay"></label> 
+        <ul class="menu p-4 overflow-y-auto w-60 md:w-80 bg-neutral text-neutral-content shadow-lg">
+          <NavigationLink target={links.blog} title="Blog"></NavigationLink>
+          <NavigationLink target={links.budgie} title="Budgie"></NavigationLink>
+          <NavigationLink target={links.mu} title="Mu"></NavigationLink>
+          <NavigationLink target={links.orionis} title="Orionis"></NavigationLink>
+          <NavigationLink target={links.resume} title="Resume"></NavigationLink>
+        </ul>
+      </div>
+    </div>
+        <Footer></Footer>
+  </body>
+</html>
