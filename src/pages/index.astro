@@ -3,83 +3,101 @@ import BasicLayout from "../layouts/BasicLayout.astro";
 ---
 
 <BasicLayout title="Patrick Jahnig | Aerodlyn">
-    <section class="prose py-3">
-        <p>This is a simple site where I have some information about myself and my projects.</p>
+  <section class="prose py-3">
+    <p>This is a simple site where I have some information about myself and my projects.</p>
+    <p>
+      I graduated cum laude with a Bachelor's of Science from Virginia Tech, majoring in
+      computer science. In school, I mostly focused on front-end or graphics-related electives
+      as that is the area of development that interests me the most (hence why most of my
+      projects are in that area).
+    </p>
+    <p>
+      Currently, in my free time I'm usually working on a couple of personal projects that I
+      have detailed below, as well as learning new programming languages and concepts. At the
+      moment, I have been trying my hand at C# and Rust. I am currently working as an Software
+      Engineer for Fidelity Investments in Durham, North Carolina where I work on a team that
+      helps enable and support the acquisition and loyalty of customers.
+    </p>
+    <p>Click the 'Resume' link on the navbar to view my resume.</p>
+  </section>
+  <span class="divider"></span>
+  <section class="prose py-3">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <h4>budgie</h4>
         <p>
-            I graduated cum laude with a Bachelor's of Science from Virginia Tech, majoring in
-            computer science. In school, I mostly focused on front-end or graphics-related electives
-            as that is the area of development that interests me the most (hence why most of my
-            projects are in that area).
+          budgie is designed as a budgeting app that helps you know when bills are due and
+          how much money is needed for bills before a paycheck comes.
         </p>
         <p>
-            Currently, in my free time I'm usually working on a couple of personal projects that I
-            have detailed below, as well as learning new programming languages and concepts. At the
-            moment, I have been trying my hand at C# and Rust. I am currently working as an Software
-            Engineer for Fidelity Investments in Durham, North Carolina where I work on a team that
-            helps enable and support the acquisition and loyalty of customers.
+          Click <a href="https://budgie.aerodlyn.io">here</a> to view the site, or
+          <a href="https://github.com/Aerodlyn/budgie">here</a> to visit the repo.
         </p>
-        <p>Click the 'Resume' link on the navbar to view my resume.</p>
-    </section>
-    <span class="divider"></span>
-    <section class="prose py-3">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <h4>budgie</h4>
-                <p>
-                    budgie is designed as a budgeting app that helps you know when bills are due and
-                    how much money is needed for bills before a paycheck comes.
-                </p>
-            </li>
-            <li>
-                <h4>mu</h4>
-                <p>
-                    mu is a simple project that takes inspiration after traditional blogs and
-                    reddit. mu uses <a href="https://www.djangoproject.com/">Django</a> as the web
-                    framework and is stylized using
-                    <a href="https://getbootstrap.com/">Bootstrap</a>.
-                </p>
-            </li>
-            <li>
-                <h4>orionis</h4>
-                <p>
-                    Orionis is a 2D fleet strategy game that pits two fleets lead by a flagship
-                    against each other.
-                </p>
-            </li>
-            <li>
-                <h4>satellite image parking lot finder</h4>
-                <p>
-                    Satellite Image Finder was my senior capstone project (completed during the
-                    capstone course Multimedia / Hypertext), which was supported by Reinventing
-                    Geospatial.
-                </p>
-                <p>
-                    The goal of the project was to implement a machine learning algorithm that is
-                    able to determine the locations of parking lots in a given image. For the
-                    purpose of this project, we defined a parking lot as a sequence of parking
-                    spaces as opposed to the entire paved lot. This significantly eased the
-                    workload of labeling training data. I was responsible for developing Python code
-                    that was integral to the input and output of the identification model.
-                </p>
-                <p>
-                    The project is implemented using Tensorflow and is accessible through a Jupyter
-                    notebook. While the identification model is not perfect, it does a relatively
-                    good job of detecting parking lots given the relatively small dataset that it
-                    was trained on as well as certain limitations of the specific model we used
-                    (which can be found detailed in the report). The model appears to identify most
-                    parking lots that are relatively parallel to the axes of the image. This means
-                    that it will occasionally miss some, but what it does identify as a parking lot
-                    it is typically at least 90% certain that what it marked is a parking lot. It
-                    does not appear to ever label any false positives (as far as we were able to
-                    tell). The model does have issues with parking lots that have an angle relative
-                    to the axes of the image.
-                </p>
-                <p>
-                    Click <a href="https://vtechworks.lib.vt.edu/handle/10919/83200">here</a> to
-                    view the VTechWorks page on the project.
-                </p>
-            </li>
-        </ul>
-    </section>
+      </li>
+        <li>
+          <h4>mu</h4>
+          <p>
+            mu is a simple project that takes inspiration after traditional blogs and
+            reddit. mu uses <a href="https://www.djangoproject.com/">Django</a> as the web
+            framework and is stylized using
+            <a href="https://getbootstrap.com/">Bootstrap</a>.
+          </p>
+          <p>
+            Click <a href="https://mu.aerodlyn.io">here</a> to view the site, or
+            <a href="https://github.com/Aerodlyn/mu">here</a> to visit the repo.
+          </p>
+        </li>
+        <li>
+          <h4>orionis</h4>
+          <p>
+            Orionis is a 2D fleet strategy game that pits two fleets lead by a flagship
+            against each other.
+          </p>
+          <p>
+            Click <a href="https://orionis.aerodlyn.io">here</a> to view the site, or
+            <a href="https://github.com/Aerodlyn/orionis">here</a> to visit the repo.
+          </p>
+        </li>
+        <li>
+          <h4>satellite image parking lot finder</h4>
+          <p>
+            Satellite Image Finder was my senior capstone project (completed during the
+            capstone course Multimedia / Hypertext), which was supported by Reinventing
+            Geospatial.
+          </p>
+          <p>
+            The goal of the project was to implement a machine learning algorithm that is
+            able to determine the locations of parking lots in a given image. For the
+            purpose of this project, we defined a parking lot as a sequence of parking
+            spaces as opposed to the entire paved lot. This significantly eased the
+            workload of labeling training data. I was responsible for developing Python code
+            that was integral to the input and output of the identification model.
+          </p>
+          <p>
+            The project is implemented using Tensorflow and is accessible through a Jupyter
+            notebook. While the identification model is not perfect, it does a relatively
+            good job of detecting parking lots given the relatively small dataset that it
+            was trained on as well as certain limitations of the specific model we used
+            (which can be found detailed in the report). The model appears to identify most
+            parking lots that are relatively parallel to the axes of the image. This means
+            that it will occasionally miss some, but what it does identify as a parking lot
+            it is typically at least 90% certain that what it marked is a parking lot. It
+            does not appear to ever label any false positives (as far as we were able to
+            tell). The model does have issues with parking lots that have an angle relative
+            to the axes of the image.
+          </p>
+          <p>
+            Click <a href="https://vtechworks.lib.vt.edu/handle/10919/83200">here</a> to
+            view the VTechWorks page on the project, or
+            <a href="https://github.com/khoale95/SatImageParkingLotFinder">here</a> to view the
+            repo.
+          </p>
+        </li>
+    </ul>
+    <p>
+      Please note that some of these projects are incomplete, and links may be broken as I work on
+      one project versus another.
+    </p>
+  </section>
 </BasicLayout>
